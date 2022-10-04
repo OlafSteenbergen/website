@@ -1,0 +1,2 @@
+CREATE TABLE articles(articleid INTEGER PRIMARY KEY, authorid INTEGER, title text not null, text text not null, creation_date timestamp DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY(authorid) REFERENCES authors(authorid));
+CREATE TABLE authors(authorid INTEGER PRIMARY KEY, name text not null)
